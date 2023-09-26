@@ -1,5 +1,6 @@
 import React from 'react';
-import {Card} from 'react-bootstrap';
+import {Card , Button} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 export function MovieCard ({movie}) {
@@ -16,6 +17,7 @@ export function MovieCard ({movie}) {
               <h3>{title}</h3> 
               <h6>{description} </h6>
               <p>rating:</p><h1>{rating} </h1>
+              <Link to={`/trailer/${movie.id}`}><Button>Trailer</Button></Link>
               </Card.Body>
             </Card>
       

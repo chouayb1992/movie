@@ -8,13 +8,14 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {FormAdd} from './FormAdd';
 import React from 'react';
+import Link from 'react-router-dom';
 
 function Header() {
 const [modalShow, setModalShow] = React.useState(false);
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home"><h1 style={{color:'green'}}>MovizLand</h1></Navbar.Brand>
+        <Link to='/'><h1 style={{color:'green'}}>MovizLand</h1></Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
